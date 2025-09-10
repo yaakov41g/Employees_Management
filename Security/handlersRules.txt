@@ -1,0 +1,30 @@
+﻿The source of this file is from "ASP.NET Core MVC Tutorial for Beginners"   Part 103 / the Text page https://www.pragimtech.com/courses/asp-net-core-mvc-tutorial-for-beginners/
+here is the link to part 103 / text
+https://csharp-video-tutorials.blogspot.com/2019/09/custom-authorization-handler-success-vs.html
+When evaluating an authorization requirement a handler can return any of the following
+Success - context.Succeed()
+Failure  - context.Fail()
+Nothing - Task.CompletedTask
+
+ 
+
+It's very important we understand what the handler returns and the impact it can have on other handlers. If you have multiple handlers for a requirement
+Failure takes precedence over success. This means
+When one of the handlers return failure, the policy fails even if the other handlers return success
+If none of the handlers return an explicit success, the policy will not succeed.
+For a policy to succeed, an explicit success must be returned from one of the handlers, and no other handler must return an explicit failure
+In general, do not return failure from a handler, as other handlers for the same requirement may succeed.
+Only return an explicit failure, when you want to guarantee the failure of the policy even when the other handlers succeed.
+By default, all handlers are called, irrespective of what a handler returns (success, failure or nothing). This is because in the other handlers, there might be something else going on besides evaluating requirements, may be logging for example.
+If you do not want the rest of the handlers to be called, when a failure is returned, set InvokeHandlersAfterFailure property to false. The default is true.
+Set InvokeHandlersAfterFailure property to false
+
+We do this in ConfigureServices() method of the Startup class
+
+services.AddAuthorization(options =>
+{
+    options.AddPolicy("EditRolePolicy", policy =>
+        policy.AddRequirements(new ManageAdminRolesAndClaimsRequirement()));
+
+    options.InvokeHandlersAfterFailure = false;
+});

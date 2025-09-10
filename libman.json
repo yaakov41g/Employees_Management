@@ -1,0 +1,31 @@
+
+// here there is registration for download sources from 'cdnjs', like css and jquery
+{ // according to this registraion we can see the nested folders under 'wwwroot' in the solution explorer.
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "twitter-bootstrap@4.5.3",
+      "destination": "wwwroot/lib/twitter-bootstrap/"
+    },
+    {
+      "library": "jquery@3.5.1",
+      "destination": "wwwroot/lib/jquery"
+    },
+    {
+      "library": "jquery-validate@1.19.2",
+      "destination": "wwwroot/lib/jquery-validate/"
+    },
+    {
+      "library": "jquery-validation-unobtrusive@3.2.11",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive/"
+    }
+  ]
+}
+// to download these sources I rightclicked on 'EmployeeManagement' project :->Add->Cient Side Library
+// then , in 'Library' type the name of the source (like jquery or twitter-bootstrap or any other you need)
+//then 'Install'.  After that this file (libman.json) will be appeared in our solution list.
+
+//if libman.json allready exist , we can download a sourse  by adding new item of "library": .... , "destination" ....+ the path\name we want on the wwwroot,
+  //for example : "wwwroot/lib/jquery" , than click 'save' and the download will be performed and also it will be appeared on the list.
+//

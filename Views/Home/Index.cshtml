@@ -1,0 +1,40 @@
+﻿@*@model IEnumerable<Employee>*@
+@model IEnumerable<Employee>
+
+@{
+    ViewBag.Title = "Employee List";
+}
+<div>
+    <div class="card-deck">
+        @foreach (var employee in Model)  // I think that Model is automatically reffers to @model IEnumerable<Employee>
+        {
+            var photoPath = "~/images/" + (employee.PhotoPath ?? "noimage.jpg");
+
+            <div class="card m-3" title=" employee" style="min-width: 18rem; max-width:30.5%;">
+                @*Limiting 3 cards per row*@
+                <div class="card-header">
+                    <h3>@employee.Name</h3>
+                </div>
+                <!--<img class="card-img-top" src="~/images/noimage.jpg" />-->
+                @*the class 'imageThumbnail' makes the pictures the same size*@
+                <img class="card-img-top imageThumbnail" src="@photoPath" asp-append-version="true" />  @*the purple "asp-..."  is a image tag helper which creates hash string as a detection if the
+                image was chaged in the server (see the source page), if so the browser will fetch the updated instead the image on the cache  *@
+                <div class="container">
+                    <div class="card-footer text-center">
+                        <a asp-controller="home" asp-action="details"
+                           asp-route-id="@employee.EncryptedId" class="btn btn-primary m-1">View</a>  @*this is tag
+                        helper, it works according with the default route pattern as it defined in the startup.cs*@
+                        @* @Url.Action("details", "home", new { id = employee.Id })  //return string of url of controller-action-parameter *@
+                        @* @Html.ActionLink("View", "details", "home", new { id = employee.Id })*@@*I think this is an 'html helper'. // the last parameter is something  called object initializer*@
+                        @*<a href="/home/details/@employee.Id" class="btn btn-primary">View</a>*@
+                        @*<a href="@Url.Action("details", "home", new { id = employee.Id })" class="btn btn-primary">Show</a>   //this is html helper*@
+                        <!-- <a href="#" class="btn btn-primary">View</a>-->
+                        <a asp-controller="home" asp-action="edit" asp-route-id="@employee.Id"
+                           class="btn btn-primary m-1">Edit</a>
+                        <a href="#" class="btn btn-danger m-1 disabled">Delete</a>
+                    </div>
+                </div>
+            </div>
+        }@*<script>Console.WriteLine("JKJK")<script>*@
+    </div>
+ </div>

@@ -1,0 +1,2 @@
+﻿The jQuery file need to  be listed in this order (jquery.js before jquery.validate.js before jquery.validate.unobtrusive.js)
+these  two last jquery files are enabling to make the user's validation on his (client ) side.

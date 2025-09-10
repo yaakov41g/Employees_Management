@@ -1,0 +1,61 @@
+Tracing enabled @ Thu Dec 17 11:31:17 2020 GMT
+--- Invoked dotnet [version: 5.0.1, commit hash: b02e13abab3d6f499751af2ad1ae6333fb4e633d] main = {
+dotnet
+.\obj\Debug\netcoreapp3.1\EmploeeManagement.dll
+}
+Reading fx resolver directory=[C:\Program Files\dotnet\host\fxr]
+Considering fxr version=[5.0.1]...
+Detected latest fxr version=[C:\Program Files\dotnet\host\fxr\5.0.1]...
+Resolved fxr [C:\Program Files\dotnet\host\fxr\5.0.1\hostfxr.dll]...
+Loaded library from C:\Program Files\dotnet\host\fxr\5.0.1\hostfxr.dll
+Invoking fx resolver [C:\Program Files\dotnet\host\fxr\5.0.1\hostfxr.dll] hostfxr_main_startupinfo
+Host path: [C:\Program Files\dotnet\dotnet.exe]
+Dotnet path: [C:\Program Files\dotnet\]
+App path: [C:\Program Files\dotnet\dotnet.dll]
+Tracing enabled @ Thu Dec 17 11:31:17 2020 GMT
+--- Invoked hostfxr_main_startupinfo [commit hash: b02e13abab3d6f499751af2ad1ae6333fb4e633d]
+Checking if CoreCLR path exists=[C:\Program Files\dotnet\coreclr.dll]
+--- Executing in muxer mode...
+Using the provided arguments to determine the application to execute.
+Using dotnet root path [C:\Program Files\dotnet\]
+App runtimeconfig.json from [C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmploeeManagement.dll]
+Runtime config is cfg=C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmploeeManagement.runtimeconfig.json dev=C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmploeeManagement.runtimeconfig.dev.json
+Attempting to read runtime config: C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmploeeManagement.runtimeconfig.json
+Attempting to read dev runtime config: C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmploeeManagement.runtimeconfig.dev.json
+Runtime config [C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmploeeManagement.runtimeconfig.json] is valid=[1]
+Executing as a self-contained app as per config file [C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmploeeManagement.runtimeconfig.json]
+--- Resolving hostpolicy.dll version from deps json [C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmploeeManagement.deps.json]
+Cannot use file stream for [C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmploeeManagement.deps.json]: No such file or directory
+The expected hostpolicy.dll directory is [C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\]
+Loaded library from C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\hostpolicy.dll
+Tracing enabled @ Thu Dec 17 11:31:17 2020 GMT
+Reading from host interface version: [0x16041101:248] to initialize policy version: [0x16041101:240]
+--- Invoked hostpolicy [commit hash: a1388f194c30cb21b36b75982962cb5e35954e4e] [runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy,3.1.1,runtimes/win-x64/native][x64] corehost_main = {
+dotnet
+.\obj\Debug\netcoreapp3.1\EmploeeManagement.dll
+}
+Deps file: 
+-- arguments_t: host_path='C:\Program Files\dotnet\dotnet.exe' app_root='C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\' deps='C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmploeeManagement.deps.json' core_svc='C:\Program Files (x86)\coreservicing' mgd_app='C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmploeeManagement.dll'
+-- arguments_t: dotnet shared store: ''
+Using C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmploeeManagement.deps.json deps file
+Could not locate the dependencies manifest file [C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmploeeManagement.deps.json]. Some libraries may fail to resolve.
+-- Listing probe configurations...
+probe_config_t: probe=[] deps-dir-probe=[1]
+Adding tpa entry: C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmploeeManagement.dll, AssemblyVersion: , FileVersion: 
+Adding files from local dir C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\
+Skipping EmploeeManagement.dll because the EmploeeManagement.dll already exists in local assemblies
+Adding EmploeeManagement.Views to local assembly set from C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmploeeManagement.Views.dll
+Adding tpa entry: C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmploeeManagement.Views.dll, AssemblyVersion: , FileVersion: 
+Adding EmployeeManagement to local assembly set from C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.dll
+Adding tpa entry: C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.dll, AssemblyVersion: , FileVersion: 
+Adding EmployeeManagement.Views to local assembly set from C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.Views.dll
+Adding tpa entry: C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.Views.dll, AssemblyVersion: , FileVersion: 
+Adding hostpolicy to local assembly set from C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\hostpolicy.dll
+Adding tpa entry: C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\hostpolicy.dll, AssemblyVersion: , FileVersion: 
+Adding apphost to local assembly set from C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\apphost.exe
+Adding tpa entry: C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\apphost.exe, AssemblyVersion: , FileVersion: 
+Skipping EmploeeManagement.exe because the EmploeeManagement.dll already exists in local assemblies
+Skipping EmployeeManagement.exe because the EmployeeManagement.dll already exists in local assemblies
+Adding to native path: C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\
+Adding to resources path: C:\ProjectsCS\EmploeeManagement\obj\Debug\netcoreapp3.1\
+Could not resolve CoreCLR path. For more details, enable tracing by setting COREHOST_TRACE environment variable to 1

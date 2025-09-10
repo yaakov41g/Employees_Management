@@ -1,0 +1,33 @@
+﻿@if (ViewBag.ErrorTitle == null)
+{
+    <h3>
+        @*in case of general exception*@ @*this will performed only if the definition of the environment is NOT 'development' (see in launchSettings.json). see Startup.cs / function Configure() *@
+        An error occured while processing your request. The support
+        team is notified and we are working on the fix
+    </h3>
+    <h5>Please contact us on pragim@pragimtech.com</h5>
+    <hr />
+    <h3>Exception Details:</h3>
+    <div class="alert alert-danger">
+        <h5>Exception Path</h5>
+        <hr />
+        <p>@ViewBag.ExceptionPath</p>
+    </div>
+
+    <div class="alert alert-danger">
+        <h5>Exception Message</h5>
+        <hr />
+        <p>@ViewBag.ExceptionMessage</p>
+    </div>
+
+    <div class="alert alert-danger">
+        <h5>Exception Stack Trace</h5>
+        <hr />
+        <p>@ViewBag.StackTrace</p>
+    </div>
+}
+else @*if ilegal action was managed in Dbase, like delete role in use*@
+{ @*this will performed only if the definition of the environment is 'development' because in other case , the _layout file is not suited for the elements. I mean to 'asp-for' for example will not work, because I did not downloaded some of the needed bootstrap/jquery files for non development enviro' as you can see in _Layout.cshtml file within the <head> element*@
+        <h1 class="text-danger">@ViewBag.ErrorTitle</h1>
+        <h6 class="text-danger">@ViewBag.ErrorMessage</h6>
+        }

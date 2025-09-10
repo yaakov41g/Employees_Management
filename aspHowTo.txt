@@ -1,0 +1,33 @@
+איך -
+
+להעלות קבצי css ו- js  לפרוייקט.
+
+-כדי לעשות migration initialization יש לבצע קודם לכן את השורה הבאה בחלון ה-package maessage (מס' 50 בסדרה של הקורס)
+ PM> Install-Package  Microsoft.EntityFrameworkCore.Tools
+ראה  קישור :  https://www.youtube.com/watch?v=G14lmWS-h4k&feature=youtu.be
+
+לעשות  migration  (יצירת\עדכון ה-database) ?
+
+להסיר  migration ואיך לעשות זאת כאשר ה-db כבר עודכן לפי ה-migration?  בעזרת עדכון בקובץ-__EFMigrationsHistory שנמצא ליד ה-db  ב-sql server object explorer view
+  ראה : https://www.youtube.com/watch?v=MhvOKHUWgiY&feature=youtu.be
+
+[attribute routing] Attribute Routing in ASP NET Core MVC  part 33
+
+לבטל cach memorry של תמונה כשהיא עברה עידכון ויש לטעון אותה מחדש ?  דרך הדף : F12  network -> Dsable cache  אפשר גם באטריביוט אלמנט של התמונה (בדף ה-View)
+
+-מה עושה סימן השאלה בשדה Dept  של EmployeeCreateViewModel
+======
+המלצה של המדריך ללמידת  asp .net core בנוסף ל-MVC  : (זה הקורס הנוכחי שאני לומד)
+ I suggest learn asp .net core as well, to broaden your chances of finding a job as a dot net web developer. Hope this answers your question.
+https://www.youtube.com/playlist?list=PL6n9fhu94yhVkdrusLaQsfERmL_Jh4XmU
+וזהו הקודס הממולץ שלו ל-  MVC : 
+  https://www.youtube.com/playlist?list=PL6n9fhu94yhVm6S8I2xd6nYz2ZORd7X2v  
+=======
+
+לבטל את ה'לוג' בחלון ה-output של ה- debug ?
+menu-tools-options-debugging-output window להעביר את ה-general output settings ל- off (חוץ מהראשון)
+https://www.youtube.com/watch?v=WyAJe6lA-bY
+
+להריץ את האפליקציה דרך שורת הפקודה (בחלון השחור) ?
+להגיע אל הספריה של הפרוייקט ולכתוב dotnet run< הסרוור יופעל וימתין לבקשה (request) .  אחת משורות המידע שלפני הסמן המהבהב מציגה את כתובת הסרוור. למשל :
+  Now listening on: http://localhost:5000 , כעת יש למלא את הכתובת בשורת הכתובת של הדפדפן , אנטר, והאתר יעלה.
