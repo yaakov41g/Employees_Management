@@ -1,18 +1,16 @@
-"# Employees_Management" 
+# Employees_Management 
 
 ## Educational ASP.NET Core MVC project built step-by-step alongside course progression.
-Hands-on ASP.NET Core MVC project created throughout the learning journey of the course.
+A based ASP.NET Core MVC project created throughout the learning journey of the course.
 
+The project covers topics from basic setup to advanced identity management, authorization policies, and external authentication providers.
 
-The project covers everything from basic setup to advanced identity management, authorization policies, and external authentication providers.
+📘 **Course Chapters**
+Below is the full list of chapters covered in this project from: [Pragim Technologies site](https://www.pragimtech.com/courses/asp-net-core-mvc-tutorial-for-beginners/)
 
-
-📘 Course Chapters
-Below is the full list of chapters covered in this project from:
 
 <details> <summary><strong>Click to expand full chapter list</strong></summary>
 
-text
 1. ASP.NET Core Tutorial
 2. Setting up machine for ASP.NET Core development
 3. Creating ASP.NET Core web application
@@ -23,7 +21,7 @@ text
 8. ASP.NET Core launchsettings.json file
 9. ASP.NET Core appsettings.json file
 10. Middleware in ASP.NET Core
-11. Configure ASP.NET Core request processing pipeline
+11. [Configure ASP.NET Core request processing pipeline](https://www.youtube.com/watch?v=nt6anXAwfYI)
 12. Static Files in ASP.NET Core
 13. ASP.NET Core developer exception page
 14. ASP.NET Core Environment Variables
@@ -52,7 +50,7 @@ text
 37. ASP.NET Core Image tag helper
 38. ASP.NET Core Environment Tag Helper
 39. Bootstrap navigation menu in ASP.NET Core application
-40. Form tag helpers in ASP.NET Core
+40. [Form tag helpers in ASP.NET Core](https://www.youtube.com/watch?v=mU4hV50rkVE)
 41. ASP.NET Core Model Binding
 42. ASP.NET Core model validation
 43. Select list validation in ASP.NET Core
@@ -71,7 +69,7 @@ text
 56. HttpPost edit action in ASP.NET Core MVC
 57. Handling 404 not found in ASP.NET Core MVC
 58. Centralised 404 error handling in ASP.NET Core
-59. UseStatusCodePagesWithRedirects vs UseStatusCodePagesWithReExecute
+59. [UseStatusCodePagesWithRedirects vs UseStatusCodePagesWithReExecute](https://www.youtube.com/watch?v=9CwgiSxrkeQ&feature=youtu.be)
 60. Global exception handling in ASP.NET Core MVC
 61. Logging in ASP.NET Core
 62. Logging exceptions in ASP.NET Core
@@ -85,7 +83,7 @@ text
 70. Implementing login functionality in ASP.NET Core
 71. Authorization in ASP.NET Core
 72. Redirect user to original URL after login
-73. Open redirect vulnerability example
+73. [Open redirect vulnerability example](https://www.youtube.com/watch?v=0q0CZTliQ7A)
 74. ASP.NET Core client-side validation
 75. ASP.NET Core remote validation
 76. Custom validation attribute in ASP.NET Core
@@ -111,10 +109,10 @@ text
 96. Authorization in views in ASP.NET Core MVC
 97. Change AccessDenied route in ASP.NET Core
 98. Claim type and value in claims policy
-99. Create custom authorization policy using Func
+99. [Create custom authorization policy using Func](https://www.youtube.com/watch?v=KJprzM49NnU)
 100. Custom authorization requirements and handlers
 101. Custom authorization handler example
-102. Multiple custom handlers for a requirement
+102. [Multiple custom handlers for a requirement](https://www.youtube.com/watch?v=aKEN2Z-jfgc)
 103. Custom authorization handler success vs failure
 104. External identity providers in ASP.NET Core
 105. Create Google OAuth credentials
