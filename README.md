@@ -1,7 +1,8 @@
 # Employees_Management 
 
 ## Educational ASP.NET Core MVC project built step-by-step alongside course progression.
-A based ASP.NET Core MVC project created throughout the learning journey of the course.
+A based ASP.NET Core MVC project created throughout the learning journey of the course.  
+**Note:** This project was assembled by copying and following the code snippets provided in each chapter of the course.
 
 The project covers topics from basic setup to advanced identity management, authorization policies, and external authentication providers.
 
